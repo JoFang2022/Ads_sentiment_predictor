@@ -7,6 +7,9 @@ This project aims to predict the sentiments of advertising videos by utilizing d
 
 To enable this research, the study uses a dataset of 1,992 advertising videos downloaded from YouTube and rich annotation of sentiments, funny and exciting scores. The project extracted video features using a pre-trained model-ResNet101, and modeled videos with a gated recurrent unit (GRU) and long short-term memory (LSTM) network. This study was able to achieve a 36.8% accuracy rate with GRU and 38.5% with LSTM on predicting sentiments, 81.05% accuracy on predicting funny or not, and 76.72% on classifying exciting or not exciting.
 
+### Train vs Validation loss & Accuracy – LSTM
+
+![alt text](https://github.com/JolieFang/Ads_Sentiment_Predictor/blob/main/7_Results/TrainvsValidation – LSTM.png)
 
 Lastly, created a backend server where the best-performing model was loaded and served to make real-time predictions through HTTP requests using FastAPI and developed a Streamlit web app to upload test set data and download the model predictions easily.
 
